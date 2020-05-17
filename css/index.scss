@@ -12,7 +12,7 @@ $primary-color: #ffffff;
 $secondary-color: #cccccc;
 $heading-font: 'Montserrat',
 sans-serif;
-$heading-color-dark: #2C4058;
+$heading-color-dark: #2c4058;
 $heading-color-light: #ffffff;
 $content-font-family: 'Open Sans',
 sans-serif;
@@ -77,7 +77,7 @@ body {
 }
 
 .section-btn {
-  border: 1px solid #2C4058;
+  border: 1px solid #2c4058;
   color: #000000;
   padding: 20px 40px;
   text-transform: uppercase;
@@ -86,9 +86,9 @@ body {
 }
 
 .section-btn:hover {
-  border: 1px solid #2C4058;
+  border: 1px solid #2c4058;
   color: #ffffff;
-  background-color: #7E5AFF;
+  background-color: #7e5aff;
   padding: 20px 40px;
   text-transform: uppercase;
   font-family: $heading-font;
@@ -116,16 +116,16 @@ body {
   top: 0;
 }
 
-.header-container {
-  width: $website-width;
-  height: 800px;
-  background: linear-gradient(to right, rgba(85, 183, 255, 0.50) 0%, rgba(126, 90, 255, 0.70) 100%),
-    url(../img/header_bkg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  position: relative;
-}
+// .header-container {
+// 	width: $website-width;
+// 	height: 800px;
+// 	background: linear-gradient(to right, rgba(85, 183, 255, 0.50) 0%, rgba(126, 90, 255, 0.70) 100%),
+// 		url(../img/header_bkg.png);
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	margin: 0 auto;
+// 	position: relative;
+// }
 
 /* Navbar */
 
@@ -198,16 +198,16 @@ body {
   padding: 10px 0px 10px 20px;
 }
 
-/* Slider */
+/* Slider Project and general */
 
-.slide-container {
+.slider-container {
   width: 100%;
   height: 670px;
   position: relative;
-  top: 40px;
+  top: 30px;
 }
 
-.content {
+.header-slider {
   height: 100%;
   max-height: 250px;
   width: 100%;
@@ -221,63 +221,38 @@ body {
   position: absolute;
   z-index: 10;
   top: 150px;
+  font-family: $heading-font;
+  color: #ffffff;
 }
 
-.content-slide {
+.slider-content {
   padding-top: 5px;
-  margin: 0 0;
+  margin: 0 8px;
   z-index: 11;
 }
 
-.content-slide-heading {
+.slider-heading {
   padding-top: 20px;
   font-size: 80px;
-  font-family: $heading-font;
-  color: #ffffff;
   font-weight: 700;
   z-index: 12;
-}
-
-.content {
-  font-size: 18px;
-  margin: 20px auto;
   font-family: $heading-font;
   color: #ffffff;
+}
+
+.slider-heading__small {
+  font-size: 18px;
+  margin: 20px auto;
   font-weight: 400;
   z-index: 13;
+  font-family: $heading-font;
+  color: #ffffff;
 }
 
 .slide-image {
   height: 50%;
   width: 100%;
 }
-
-// .content-slide li {
-//   position: absolute;
-//   // float: left;
-// }
-
-// .slick-dots {
-//   margin: auto !important;
-//   width: 70% !important;
-//   position: relative;
-//   left: 220px;
-// }
-
-// .slick-dots button::before {
-//   font-size: 16px;
-//   color: #fff !important;
-//   opacity: 0.7;
-//   font-size: 20px;
-//   line-height: 20px;
-// }
-
-// .slick-dots li.slick-active button::before {
-//   color: #fff !important;
-//   opacity: 1;
-//   font-size: 20px;
-//   line-height: 20px;
-// }
 
 .slick-slider {
   position: absolute;
@@ -351,6 +326,7 @@ body {
 .vertical-dots li.slick-active button:before {
   opacity: .75;
   color: white;
+  content: url(../img/ellipse_filled.png);
 }
 
 .vertical-dots li button:before {
@@ -380,7 +356,6 @@ body {
   width: $container-width;
   display: flex;
   margin-top: 157px;
-
 }
 
 .projects-content-one__left {
@@ -475,7 +450,7 @@ body {
 .projects-bluebox {
   width: 585px;
   height: 470px;
-  background-color: #55B7FF;
+  background-color: #55b7ff;
   position: absolute;
   left: 0;
   top: 1073px;
@@ -485,9 +460,143 @@ body {
 .projects-purplebox {
   width: 585px;
   height: 470px;
-  background-color: #7E5AFF;
+  background-color: #7e5aff;
   position: absolute;
   right: 0;
   top: 1742px;
   z-index: -1;
+}
+
+// Section 3 News
+
+.news-bkg {
+  background: linear-gradient(45deg, #3c7fd4, #24ccfa);
+  position: relative;
+  height: 1035px;
+}
+
+.news-img img {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+.news-content {
+  width: $website-width;
+  height: 800px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: 134px;
+}
+
+// News Slider
+
+.news-slider-wrapper {
+  width: $container-width;
+  margin: auto;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.news-slider {
+  height: 100%;
+  max-height: 530px;
+  width: $container-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  font-family: $heading-font;
+  color: #ffffff;
+}
+
+.news-slider__card {
+  width: 370px;
+  height: 513.8px;
+  margin-left: 0 15px;
+  background-color: #ffffff;
+}
+
+.news-slider__card-heading {
+  color: $heading-color-dark;
+  font-family: $heading-font;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-left: 21px;
+}
+
+.news-slider__card-text {
+  font-family: $content-font-family;
+  color: $heading-color-dark;
+  line-height: 1.5;
+  margin-top: 18px;
+  margin: 18px 21px 0 21px;
+  font-size: 18px;
+}
+
+.news-slider__card-byline {
+  display: flex;
+  padding-left: 21px;
+  padding-top: 20px;
+
+}
+
+.news-slider__card-byline-img {
+  border-radius: 100%;
+}
+
+.news-slider__card-byline-text {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.news-slider__card-byline-heading {
+  color: $heading-color-dark;
+  font-family: $heading-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.news-slider__card-byline-date {
+  color: #55B7FF;
+  font-family: $heading-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Arrows News slider */
+.slick-prev:before {
+  content: url(../img/prev_arrow.png) !important;
+  font-size: 30px;
+  position: relative;
+  right: 70px;
+}
+
+.slick-next:before {
+  content: url(../img/next_arrow.png) !important;
+  font-size: 30px;
+  position: relative;
+  left: 40px;
+}
+
+// .slick-dots changed in slick-theme.scss
+
+/* Gallery section */
+
+.gallery-content {
+  width: $website-width;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 134px;
 }

@@ -149,7 +149,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: -55px;
     list-style: none;
     display: block;
     text-align: center;
@@ -181,10 +181,11 @@ $slick-opacity-not-active: 0.25 !default;
 
             &:hover,
             &:focus {
-                outline: none;
+                content: url(../img/ellipse_filled.png);
 
                 &:before {
-                    opacity: $slick-opacity-on-hover;
+                    // opacity: $slick-opacity-on-hover;
+                    content: url(../img/ellipse_filled.png);
                 }
             }
 
@@ -192,7 +193,7 @@ $slick-opacity-not-active: 0.25 !default;
                 position: absolute;
                 top: 0;
                 left: 0;
-                content: $slick-dot-character;
+                // content: $slick-dot-character;
                 width: 20px;
                 height: 20px;
                 font-family: $slick-font-family;
@@ -200,15 +201,17 @@ $slick-opacity-not-active: 0.25 !default;
                 line-height: 20px;
                 text-align: center;
                 color: $slick-dot-color;
-                opacity: $slick-opacity-not-active;
+                // opacity: $slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+                content: url(../img/ellipse_not_filled.png);
             }
         }
 
         &.slick-active button:before {
             color: $slick-dot-color-active;
             opacity: $slick-opacity-default;
+            content: url(../img/ellipse_filled.png);
         }
     }
 }

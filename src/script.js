@@ -1,8 +1,7 @@
-$('.content').slick({
+$('.header-slider').slick({
   dots: true,
-  // vertical: true,
   infinite: true,
-  speed: 300,
+  speed: 400,
   slidesToShow: 1,
   adaptiveHeight: true,
   prevArrow: false,
@@ -10,13 +9,15 @@ $('.content').slick({
   dotsClass: "vertical-dots"
 });
 
-$('.content_2').slick({
+$('.news-slider').slick({
   dots: true,
-  // vertical: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
   infinite: true,
-  speed: 300,
-  slidesToShow: 1,
   adaptiveHeight: true,
-  prevArrow: false,
-  nextArrow: false
+  // prevArrow: $('.prev'),
+  // nextArrow: $('.next'),
+  dotsClass: "slick-dots"
 });

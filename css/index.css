@@ -20,7 +20,7 @@ body {
 
 .heading-dark {
   text-transform: uppercase;
-  color: #2C4058;
+  color: #2c4058;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 44px;
@@ -43,7 +43,7 @@ body {
   width: 100px;
   margin-left: auto;
   margin-right: auto;
-  border-top: 1px solid #2C4058;
+  border-top: 1px solid #2c4058;
   border-bottom: 0px;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .section-btn {
-  border: 1px solid #2C4058;
+  border: 1px solid #2c4058;
   color: #000000;
   padding: 20px 40px;
   text-transform: uppercase;
@@ -66,9 +66,9 @@ body {
 }
 
 .section-btn:hover {
-  border: 1px solid #2C4058;
+  border: 1px solid #2c4058;
   color: #ffffff;
-  background-color: #7E5AFF;
+  background-color: #7e5aff;
   padding: 20px 40px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -93,17 +93,6 @@ body {
   position: absolute;
   z-index: 2;
   top: 0;
-}
-
-.header-container {
-  width: 1600px;
-  height: 800px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(85, 183, 255, 0.5)), to(rgba(126, 90, 255, 0.7))), url(../img/header_bkg.png);
-  background: linear-gradient(to right, rgba(85, 183, 255, 0.5) 0%, rgba(126, 90, 255, 0.7) 100%), url(../img/header_bkg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  position: relative;
 }
 
 /* Navbar */
@@ -192,15 +181,15 @@ body {
   padding: 10px 0px 10px 20px;
 }
 
-/* Slider */
-.slide-container {
+/* Slider Project and general */
+.slider-container {
   width: 100%;
   height: 670px;
   position: relative;
-  top: 40px;
+  top: 30px;
 }
 
-.content {
+.header-slider {
   height: 100%;
   max-height: 250px;
   width: 100%;
@@ -223,30 +212,32 @@ body {
   position: absolute;
   z-index: 10;
   top: 150px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
 }
 
-.content-slide {
+.slider-content {
   padding-top: 5px;
-  margin: 0 0;
+  margin: 0 8px;
   z-index: 11;
 }
 
-.content-slide-heading {
+.slider-heading {
   padding-top: 20px;
   font-size: 80px;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
   font-weight: 700;
   z-index: 12;
-}
-
-.content {
-  font-size: 18px;
-  margin: 20px auto;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
+}
+
+.slider-heading__small {
+  font-size: 18px;
+  margin: 20px auto;
   font-weight: 400;
   z-index: 13;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
 }
 
 .slide-image {
@@ -319,6 +310,7 @@ body {
 .vertical-dots li.slick-active button:before {
   opacity: .75;
   color: white;
+  content: url(../img/ellipse_filled.png);
 }
 
 .vertical-dots li button:before {
@@ -365,7 +357,7 @@ body {
 
 .projects-content-one__heading-small {
   text-transform: uppercase;
-  color: #2C4058;
+  color: #2c4058;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -373,7 +365,7 @@ body {
 
 .projects-content-one__text {
   font-family: "Open Sans", sans-serif;
-  color: #2C4058;
+  color: #2c4058;
   line-height: 1.9;
   font-size: 18px;
   margin-bottom: 40px;
@@ -418,7 +410,7 @@ body {
 
 .projects-content-two__heading-small {
   text-transform: uppercase;
-  color: #2C4058;
+  color: #2c4058;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -426,7 +418,7 @@ body {
 
 .projects-content-two__text {
   font-family: "Open Sans", sans-serif;
-  color: #2C4058;
+  color: #2c4058;
   line-height: 1.9;
   font-size: 18px;
   margin-bottom: 40px;
@@ -448,7 +440,7 @@ body {
 .projects-bluebox {
   width: 585px;
   height: 470px;
-  background-color: #55B7FF;
+  background-color: #55b7ff;
   position: absolute;
   left: 0;
   top: 1073px;
@@ -458,10 +450,149 @@ body {
 .projects-purplebox {
   width: 585px;
   height: 470px;
-  background-color: #7E5AFF;
+  background-color: #7e5aff;
   position: absolute;
   right: 0;
   top: 1742px;
   z-index: -1;
+}
+
+.news-bkg {
+  background: linear-gradient(45deg, #3c7fd4, #24ccfa);
+  position: relative;
+  height: 1035px;
+}
+
+.news-img img {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+.news-content {
+  width: 1600px;
+  height: 800px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: 134px;
+}
+
+.news-slider-wrapper {
+  width: 1171px;
+  margin: auto;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.news-slider {
+  height: 100%;
+  max-height: 530px;
+  width: 1171px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+.news-slider__card {
+  width: 370px;
+  height: 513.8px;
+  margin-left: 0 15px;
+  background-color: #ffffff;
+}
+
+.news-slider__card-heading {
+  color: #2c4058;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-left: 21px;
+}
+
+.news-slider__card-text {
+  font-family: "Open Sans", sans-serif;
+  color: #2c4058;
+  line-height: 1.5;
+  margin-top: 18px;
+  margin: 18px 21px 0 21px;
+  font-size: 18px;
+}
+
+.news-slider__card-byline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 21px;
+  padding-top: 20px;
+}
+
+.news-slider__card-byline-img {
+  border-radius: 100%;
+}
+
+.news-slider__card-byline-text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-left: 20px;
+}
+
+.news-slider__card-byline-heading {
+  color: #2c4058;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.news-slider__card-byline-date {
+  color: #55B7FF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Arrows News slider */
+.slick-prev:before {
+  content: url(../img/prev_arrow.png) !important;
+  font-size: 30px;
+  position: relative;
+  right: 70px;
+}
+
+.slick-next:before {
+  content: url(../img/next_arrow.png) !important;
+  font-size: 30px;
+  position: relative;
+  left: 40px;
+}
+
+/* Gallery section */
+.gallery-content {
+  width: 1600px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 134px;
 }
 /*# sourceMappingURL=index.css.map */
