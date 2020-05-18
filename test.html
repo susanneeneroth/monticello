@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+  <style>
+    #map {
+      width: 100%;
+      height: 400px;
+      background-color: grey;
+    }
+  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/test.css">
@@ -16,7 +23,7 @@
     <div class="header-img"><img src="img/header_bkg.png" alt=""></div>
     <div class="header-content">
       <div class="nav-container">
-        <div class="nav-logo"><a href="http://www.dn.se"><img src="img/logo.png" alt="logo"></a></div>
+        <div class="nav-logo"><a href="http://www.dn.se"><img src="img/logo.svg" alt="logo"></a></div>
         <nav class="nav-menu">
           <ul>
             <li class="about"><a href="index.html">ABOUT US</a></li>
@@ -27,29 +34,36 @@
         </nav>
         <div class="nav-icons">
           <ul>
-            <li><a href="#"><img src="img/fb_icon.png" alt="facebook icon"></a></li>
-            <li><a href="#"><img src="img/twitter_icon.png" alt="twitter icon"></a></li>
-            <li><a href="#"><img src="img/instagram.png" alt="instagram icon"></a></li>
+            <li><a href="#"><img src="img/facebook.svg" alt="facebook icon"></a></li>
+            <li><a href="#"><img src="img/twitter.svg" alt="twitter icon"></a></li>
+            <li><a href="#"><img src="img/instagram.svg" alt="instagram icon"></a></li>
           </ul>
         </div>
       </div>
       <div class="slide-container">
-        <div class="content">
-          <div class="content-slide">
-            <h1 class="content-slide-heading">SIMPLE & MODERN</h1>
-            <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
-          </div>
-          <div class="content-slide">
-            <h1 class="content-slide-heading">MODERN</h1>
-          </div>
-          <div class="content-slide">
-            <h1 class="content-slide-heading">SIMPLE</h1>
-          </div>
-        </div>
+        <h3>My Google Maps Demo</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+
       </div>
 
     </div>
   </header>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = { lat: -25.344, lng: 131.036 };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.getElementById('map'), { zoom: 4, center: uluru });
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({ position: uluru, map: map });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2Rk_VdQyTrZDRzA-RLbzaTC52KuJ7GZM&callback=initMap">
+    </script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
