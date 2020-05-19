@@ -25,7 +25,7 @@
           <div class="nav-logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
           <nav class="nav-menu">
             <ul>
-              <li class="about"><a href="index.html">ABOUT US</a></li>
+              <li class="about"><a href="#">ABOUT US</a></li>
               <li><a href="#projects">PROJECTS</a></li>
               <li><a href="#news">NEWS</a></li>
               <li><a href="#contact">CONTACT</a></li>
@@ -59,13 +59,16 @@
             </div>
           </div>
         </div>
+        <a href="#projects"><img src="img/header_down_arrow.svg" alt="" class="header-container__down-arrow"></a>
       </div>
     </header>
 
     <!-- Section two - Projects -->
     <section class="projects">
       <hr class="divider-dark">
-      <h2 class="heading-dark">What we do</h2>
+      <a id="projects">
+        <h2 class="heading-dark">What we do</h2>
+      </a>
       <div class="projects-content-one">
         <div class="projects-content-one__left"><img src="img/projects_left.png" alt="building"></div>
         <div class="projects-content-one__right">
@@ -102,7 +105,9 @@
         <div class="news-img"><img src="img/news_bkg.png" alt=""></div>
         <div class="news-content">
           <hr class="divider-light">
-          <h2 class="heading-light">Latest News</h2>
+          <a id="news">
+            <h2 class="heading-light">Latest News</h2>
+          </a>
 
           <!-- Slider 2 News-->
           <div class="news-slider-wrapper">
@@ -207,24 +212,38 @@
     <!-- Contact form -->
     <section class="contact">
       <div class="contact__container">
-        <div class="contact__container-top">
-          <hr class="divider-dark">
-          <h2 class="heading-dark">Get in touch</h2>
-        </div>
-        <div class="contact-form">
-          <div class="contact-form__left">
-            <p class="contact-form__text">91 Nolan Extensions Suite 670</p>
-            <p class="contact-form__text">+001 356-868-2454</p>
-            <p class="contact-form__text">montichello@service.com</p>
-            <p class="contact-form__text">From 07:05AM to 19:30PM</p>
+        <div class="contact-bkg"><img src="img/form_bkg.svg" alt="buildings background">
+          <div class="contact__container-top">
+            <hr class="divider-dark">
+            <a id="contact">
+              <h2 class="heading-dark">Get in touch</h2>
+            </a>
           </div>
-          <div class="contact-form__right">
-            <p class="contact-form__text">Formulär</p>
-            <button class="contact-form__button">Submit</button>
+          <div class="contact-form">
+            <div class="contact-form__left">
+              <p class="contact-form__left-adress"><img src="img/form_marker.svg" alt="form icon marker"
+                  class="contact-form__icon-marker">91
+                Nolan Extensions Suite 670
+              </p>
+              <p class="contact-form__left-adress"><img src="img/form_tele.svg" alt="form icon marker"
+                  class="contact-form__icon-tele">+001 356-868-2454</p>
+              <p class="contact-form__left-adress"><img src="img/form_letter.svg" alt="form icon marker"
+                  class="contact-form__icon-letter">montichello@service.com</p>
+              <p class="contact-form__left-adress"><img src="img/form_clock.svg" alt="form icon marker"
+                  class="contact-form__icon-clock">From 07:05AM to 19:30PM</p>
+            </div>
+            <div class="contact-form__right">
+              <div class="contact-form__right-form-text contact-form__right-field">
+                <input type="text" id="name" name="name" value="Mollie Medina">
+              </div>
+              <div class="contact-form__right-form-email contact-form__right-field">
+                <input type="email" name="email" id="email" value="Email">
+              </div>
+              <button type="submit" class="contact-form__button">Submit</button>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
 
     <!-- Footer -->
