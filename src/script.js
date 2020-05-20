@@ -199,3 +199,8 @@ $('a[href*="#"]').on('click', function (e) {
     'linear'
   )
 });
+
+// Form message
+function myFunction() {
+  alert("Thank you for your message. We will get back to you soon!");
+}
